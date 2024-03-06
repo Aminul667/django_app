@@ -1,22 +1,10 @@
-<!DOCTYPE html>
+{% extends "layout.html" %}
 
-{% load static %}
+{% block title %} 
+  Home 
+{% endblock %} 
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="{%static 'css/style.css'%}" />
-  </head>
-  <body>
-    <h1>This is home page</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quisquam
-      repellat maiores expedita, nulla aperiam maxime cum ut aliquam repudiandae
-      consectetur? Totam ab fugit voluptatibus! Dolores voluptates repellat
-      dolorem aspernatur!
-    </p>
-    <p>check out my about page <a href="/about">About</a></p>
-  </body>
-</html>
+{% block content %}
+  <h1>This is home page</h1>
+  <p>check out my about page <a href="/about">About</a></p>
+{% endblock content %}
